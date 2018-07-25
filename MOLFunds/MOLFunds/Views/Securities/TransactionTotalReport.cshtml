@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "TransactionTotalReport";
+}
+
+<h2> 往來券商交易總額控管表</h2>
+<nav class="navbar navbar-light bg-light">
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" value="1">
+        <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</nav>
+
+<button class="btn btn-success my-2 my-sm-0">Export</button>
+<br /><br />
+
+<table border="1px" class="table table-bordered table-condensed">
+    <tbody>
+        <tr>
+            <td><label>投組名稱</label></td>
+            <td colspan="3">1</td>
+        </tr>
+        <tr>
+            <td><label for="UserName">下單券商</label></td>
+            <td colspan="3">Test</td>
+        </tr>
+        <tr>
+            <td><label for="Email">買進總額</label></td>
+            <td>2000000</td>
+            <td><label>賣出總額</label></td>
+            <td>10000</td>
+        </tr>
+        <tr>
+            <td><label>下單比率</label></td>
+            <td colspan="3">5%</td>
+        </tr>
+        <tr>
+            <td><label>手續費合計</label></td>
+            <td>50000</td>
+            <td><label>手續費比率</label></td>
+            <td>10%</td>
+        </tr>
+    </tbody>
+</table>
+
+
+

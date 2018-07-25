@@ -17,5 +17,13 @@ namespace MOLFunds.Controllers
         public ActionResult SecuritiesMaintain() {
             return View();
         }
+
+        public ActionResult SecuritiesCapitalStockReport() {
+            return View();
+        }
+
+        public ActionResult TransactionTotalReport() {
+            return View();
+        }
     }
 }
