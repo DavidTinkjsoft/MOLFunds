@@ -17,5 +17,9 @@ namespace MOLFunds.Controllers
         public ActionResult SecuritiesMaintain() {
             return View();
         }
+
+        public ActionResult SecuritiesInvestment() {
+            return View();
+        }
     }
 }
