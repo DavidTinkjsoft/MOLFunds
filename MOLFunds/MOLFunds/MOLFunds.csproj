@@ -148,6 +148,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AuditController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SecuritiesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -195,7 +196,17 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Securities\SecuritiesMaintain.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Securities\Securities60Average.cshtml" />
+=======
+<<<<<<< HEAD
+    <Content Include="Views\Securities\SecuritiesInvestment.cshtml" />
+=======
+    <Content Include="Views\Audit\FundsAuditQuota.cshtml" />
+    <Content Include="Views\Securities\SecuritiesCapitalStockReport.cshtml" />
+    <Content Include="Views\Securities\TransactionTotalReport.cshtml" />
+>>>>>>> 934b639fe8dc70285c1562da38aaa80008c4f7df
+>>>>>>> 64da658447b6bd6b348e59c180c94a596665f120
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
