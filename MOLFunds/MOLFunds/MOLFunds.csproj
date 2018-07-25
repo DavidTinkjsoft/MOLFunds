@@ -197,11 +197,14 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Securities\SecuritiesMaintain.cshtml" />
 
+    <Content Include="Views\Securities\Securities60Average.cshtml" />
+
     <Content Include="Views\Securities\SecuritiesInvestment.cshtml" />
 
     <Content Include="Views\Audit\FundsAuditQuota.cshtml" />
     <Content Include="Views\Securities\SecuritiesCapitalStockReport.cshtml" />
     <Content Include="Views\Securities\TransactionTotalReport.cshtml" />
+
 
   </ItemGroup>
   <ItemGroup>
