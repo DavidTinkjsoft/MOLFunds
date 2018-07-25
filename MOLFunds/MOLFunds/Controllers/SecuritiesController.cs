@@ -18,7 +18,15 @@ namespace MOLFunds.Controllers
             return View();
         }
 
+<<<<<<< HEAD
         public ActionResult SecuritiesInvestment() {
+=======
+        public ActionResult SecuritiesCapitalStockReport() {
+            return View();
+        }
+
+        public ActionResult TransactionTotalReport() {
+>>>>>>> 934b639fe8dc70285c1562da38aaa80008c4f7df
             return View();
         }
     }
