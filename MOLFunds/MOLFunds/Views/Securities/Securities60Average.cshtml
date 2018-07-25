@@ -2,7 +2,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>新增證券基本資料</h2>
+<h2>查詢證券60日均量</h2>
 <br />
 <style>
     h2{
@@ -14,7 +14,6 @@
     table {
         font-family: '微軟正黑體';
     }
-
 </style>
 <form>
     <div class="form-group row">
@@ -24,46 +23,18 @@
         </div>
     </div>
     <div class="form-group row">
-        <label for="inputEmail3" class="col-md-1 col-form-label">證券名稱</label>
+        <label for="inputEmail3" class="col-md-1 col-form-label">收盤日期</label>
         <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputPassword3" placeholder="證券名稱">
+            <input type="text" class="form-control" id="inputPassword3" placeholder="收盤日期">
         </div>
     </div>
     <div class="form-group row">
-        <label for="inputEmail3" class="col-md-1 col-form-label">產業類別</label>
+        <label for="inputEmail3" class="col-md-1 col-form-label">平均天數</label>
         <div class="col-sm-10">
             <select class="form-control">
-                <option value="Taiwan">傳統產業</option>
-                <option value="Taiwan">半導體</option>
-                <option value="Taiwan">電器電纜</option>
-                <option value="Taiwan">光電</option>
-                <option value="Taiwan">金融保險</option>
-            </select>
-        </div>
-    </div>
-    <div class="form-group row">
-        <label for="inputEmail3" class="col-md-1 col-form-label">幣別</label>
-        <div class="col-sm-10">
-            <select class="form-control">
-                <option value="TWD">TWD</option>
-                <option value="TWD">UK</option>
-            </select>
-        </div>
-    </div>
-    <div class="form-group row">
-        <label for="inputEmail3" class="col-md-1 col-form-label">國家別</label>
-        <div class="col-sm-10">
-            <select class="form-control">
-                <option value="Taiwan">Taiwan</option>
-                <option value="US">US</option>
-            </select>
-        </div>
-    </div>
-    <div class="form-group row">
-        <label for="inputEmail3" class="col-md-1 col-form-label">交易所</label>
-        <div class="col-sm-10">
-            <select class="form-control">
-                <option value="Taiwan">台灣證券交易所</option>
+                <option value="TWD">5</option>
+                <option value="TWD">20</option>
+                <option value="TWD">60</option>
             </select>
         </div>
     </div>
@@ -74,16 +45,15 @@
         </div>
     </div>
     <hr />
-    <table class="table table-hover table-bordered" >
+    <table class="table table-hover table-bordered">
         <thead>
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">證券代碼</th>
                 <th scope="col">證券名稱</th>
-                <th scope="col">產業類別</th>
-                <th scope="col">幣別</th>
-                <th scope="col">國家別</th>
-                <th scope="col">交易所</th>
+                <th scope="col">收盤日期</th>
+                <th scope="col">平均天數</th>
+                <th scope="col">平均成交量</th>
                 <th scope="col">動作</th>
             </tr>
         </thead>
@@ -92,21 +62,21 @@
                 <th scope="row">1</th>
                 <td>2303</td>
                 <td>聯電</td>
-                <td>半導體</td>
-                <td>TWD</td>
-                <td>Taiwan</td>
-                <td>台灣證券交易所</td>
-                <td><button type="button" class="btn btn-info">編輯</button>
-                    <button type="button" class="btn btn-danger">刪除</button></td>                
+                <td>2018-07-25</td>
+                <td>60</td>
+                <td>38123張</td>
+                <td>
+                    <button type="button" class="btn btn-info">編輯</button>
+                    <button type="button" class="btn btn-danger">刪除</button>
+                </td>
             </tr>
             <tr>
                 <th scope="row">2</th>
                 <td>2323</td>
                 <td>中環</td>
-                <td>光電</td>
-                <td>TWD</td>
-                <td>Taiwan</td>
-                <td>台灣證券交易所</td>
+                <td>2018-07-25</td>
+                <td>60</td>
+                <td>138660張</td>
                 <td>
                     <button type="button" class="btn btn-info">編輯</button>
                     <button type="button" class="btn btn-danger">刪除</button>
@@ -116,10 +86,9 @@
                 <th scope="row">3</th>
                 <td>2884</td>
                 <td>玉山金</td>
-                <td>金融保險</td>
-                <td>TWD</td>
-                <td>Taiwan</td>
-                <td>台灣證券交易所</td>
+                <td>2018-07-25</td>
+                <td>60</td>
+                <td>83566張</td>
                 <td>
                     <button type="button" class="btn btn-info">編輯</button>
                     <button type="button" class="btn btn-danger">刪除</button>
@@ -129,10 +98,9 @@
                 <th scope="row">4</th>
                 <td>1605</td>
                 <td>華新</td>
-                <td>電器電纜</td>            
-                <td>TWD</td>
-                <td>Taiwan</td>
-                <td>台灣證券交易所</td>
+                <td>2018-07-25</td>
+                <td>60</td>
+                <td>45089張</td>
                 <td>
                     <button type="button" class="btn btn-info">編輯</button>
                     <button type="button" class="btn btn-danger">刪除</button>
@@ -142,10 +110,9 @@
                 <th scope="row">5</th>
                 <td>2883</td>
                 <td>開發金</td>
-                <td>金融保險</td>
-                <td>TWD</td>
-                <td>Taiwan</td>
-                <td>台灣證券交易所</td>
+                <td>2018-07-25</td>
+                <td>60</td>
+                <td>16320張</td>
                 <td>
                     <button type="button" class="btn btn-info">編輯</button>
                     <button type="button" class="btn btn-danger">刪除</button>
