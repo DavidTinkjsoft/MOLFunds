@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewBag.Title = "SignGridView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2> 線上簽核總覽</h2>
+<nav class="navbar navbar-light bg-light">
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" value="1">
+        <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</nav>
+
+<span>待簽核筆數 : 3</span>
+<br /><br />
+
+      <table class="table table-hover table-bordered">
+          <thead>
+              <tr>
+                  <th scope="col">申請單號</th>
+                  <th scope="col">申請人</th>
+                  <th scope="col">申請日期</th>
+                  <th scope="col">申請權限內容</th>
+                  <th scope="col">申請流程人員</th>
+                  <th scope="col">動作</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <th scope="row">187654</th>
+                  <td>Vicky</td>
+                  <td>2018/07/25</td>
+                  <td>投資金額上限</td>
+                  <td>Admin</td>
+                  <td>
+                      <button type="button" class="btn btn-primary">Sign</button>
+                      <button type="button" class="btn btn-danger">Reject</button>
+                  </td>
+              </tr>
+              <tr>
+                  <th scope="row">216398</th>
+                  <td>Tim</td>
+                  <td>2018/07/25</td>
+                  <td>帳號鎖定</td>
+                  <td>Admin</td>
+                  <td>
+                      <button type="button" class="btn btn-primary">Sign</button>
+                      <button type="button" class="btn btn-danger">Reject</button>
+                  </td>
+              </tr>
+              <tr>
+                  <th scope="row">31457</th>
+                  <td>Ketty</td>
+                  <td>2018/07/25</td>
+                  <td>移除權限</td>
+                  <td>Admin</td>
+                  <td>
+                      <button type="button" class="btn btn-primary">Sign</button>
+                      <button type="button" class="btn btn-danger">Reject</button>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
