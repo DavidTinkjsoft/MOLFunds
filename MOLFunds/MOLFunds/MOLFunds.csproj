@@ -151,6 +151,7 @@
     <Compile Include="Controllers\AuditController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SecuritiesController.cs" />
+    <Compile Include="Controllers\SignController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -204,6 +205,7 @@
     <Content Include="Views\Securities\SecuritiesInvestMaintain.cshtml" />
     <Content Include="Views\Securities\SecuritiesTurnover.cshtml" />
     <Content Include="Views\Securities\SecuritiesReturn.cshtml" />
+    <Content Include="Views\Sign\SignGridView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
