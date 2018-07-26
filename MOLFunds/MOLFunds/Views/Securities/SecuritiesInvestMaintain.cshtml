@@ -1,0 +1,163 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<h2>證券投資決定維護作業</h2>
+<br />
+<form>
+    <div class="container">
+        <div class="form-group col-md-4">
+            <label>投組名稱</label>
+            <input type="text" class="form-control" placeholder="投組名稱">
+        </div>
+        <div class="form-group col-md-4">
+            <label>依據編號</label>
+            <input type="text" class="form-control" placeholder="依據編號">
+        </div>
+    </div>
+    <div class="container">
+        <div class="form-group col-md-2">
+            <label>決定書編號</label>
+            <input type="text" class="form-control" placeholder="決定書編號">
+        </div>
+        <div class="form-group col-md-4">
+            <label>決定書日期</label>
+            <input type="text" class="form-control" placeholder="決定書日期">
+        </div>
+        <div class="form-group col-md-2">
+            <label>證券代碼</label>
+            <input type="text" class="form-control" placeholder="證券代碼">
+        </div>
+    </div>
+    <div class="container">
+        <div class="form-group col-md-2">
+            <label>交易種類</label>
+            <input type="text" class="form-control" placeholder="交易種類">
+        </div>
+        <div class="form-group col-md-2">
+            <label>股數</label>
+            <input type="text" class="form-control" placeholder="股數">
+        </div>
+        <div class="form-group col-md-4">
+            <label>價格區間</label>
+            <input type="text" class="form-control" placeholder="價格區間">
+        </div>
+    </div>
+    <div class="container">
+        <div class="form-group col-md-2">
+            <label>買進價格</label>
+            <input type="text" class="form-control" placeholder="買進價格">
+        </div>
+        <div class="form-group col-md-2">
+            <label>賣出價格</label>
+            <input type="text" class="form-control" placeholder="賣出價格">
+        </div>
+        <div class="form-group col-md-4">
+            <label>理由</label>
+            <input type="text" class="form-control" placeholder="理由">
+        </div>
+    </div>
+    <div class="container">
+        <div class="form-group col-md-2">
+            <label>買進總金額</label>
+            <input type="text" class="form-control" placeholder="買進總金額">
+        </div>
+        <div class="form-group col-md-2">
+            <label>賣出總金額</label>
+            <input type="text" class="form-control" placeholder="賣出總金額">
+        </div>
+    </div>
+    <div class="container">
+        <div class="form-group col-md-2">
+            <button type="button" class="btn btn-success">送出</button>
+        </div>
+        <div class="form-group col-md-2">
+            <button type="button" class="btn btn-danger">清除重填</button>
+        </div>
+    </div>
+</form>
+<br />
+<table class="table table-hover table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">投組名稱</th>
+            <th scope="col">依據編號</th>
+            <th scope="col">決定書編號</th>
+            <th scope="col">決定書日期</th>
+            <th scope="col">證券代碼</th>
+            <th scope="col">交易種類</th>
+            <th scope="col">股數</th>
+            <th scope="col">價格區間</th>
+            <th scope="col">買進價格</th>
+            <th scope="col">賣出價格</th>
+            <th scope="col">理由</th>
+            <th scope="col">買進總金額</th>
+            <th scope="col">賣出總金額</th>
+            <th scope="col">動作</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>A</td>
+            <td>001</td>
+            <td>001</td>
+            <td>2018/07/26</td>
+            <td>2303</td>
+            <td>普通股</td>
+            <td>99</td>
+            <td>99</td>
+            <td>15.5</td>
+            <td>25.5</td>
+            <td>(無)</td>
+            <td>1534.5</td>
+            <td>2524.5</td>
+            <td>
+                <button type="button" class="btn btn-primary">edit</button>
+                <button type="button" class="btn btn-danger">delete</button>
+            </td>
+
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>B</td>
+            <td>002</td>
+            <td>002</td>
+            <td>2018/07/26</td>
+            <td>2323</td>
+            <td>普通股</td>
+            <td>99</td>
+            <td>99</td>
+            <td>15.5</td>
+            <td>25.5</td>
+            <td>(無)</td>
+            <td>1534.5</td>
+            <td>2524.5</td>
+            <td>
+                <button type="button" class="btn btn-primary">edit</button>
+                <button type="button" class="btn btn-danger">delete</button>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>C</td>
+            <td>003</td>
+            <td>003</td>
+            <td>2018/07/26</td>
+            <td>2884</td>
+            <td>普通股</td>
+            <td>99</td>
+            <td>99</td>
+            <td>15.5</td>
+            <td>25.5</td>
+            <td>(無)</td>
+            <td>1534.5</td>
+            <td>2524.5</td>
+            <td>
+                <button type="button" class="btn btn-primary">edit</button>
+                <button type="button" class="btn btn-danger">delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
