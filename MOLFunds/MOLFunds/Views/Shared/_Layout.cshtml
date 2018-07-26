@@ -4,42 +4,128 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/simple-sidebar.css" rel="stylesheet" />
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("勞動基金投資決策及稽核控管整合系統", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                @*<ul class="nav navbar-nav">
-            <li>@Html.ActionLink("Home", "Index", "Home")</li>
-            <li>@Html.ActionLink("About", "About", "Home")</li>
-            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-        </ul>*@
-                <ul class="nav navbar-nav">
-                    <li><a class="offset-md-3">Admin</a></li>
-                </ul>
-            </div>
+<body style="padding-top:0px">
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>勞動基金投資決策及稽核控管整合系統</h3>
+            </div>    
+            <ul class="list-unstyled components">
+                <p> Admin &nbsp;&nbsp;&nbsp; Logout </p>
+                <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">基金切換</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">新制勞工退休金</a>
+                        </li>
+                        <li>
+                            <a href="#">新制勞工退休金</a>
+                        </li>
+                    </ul>
+                </li>
+                <br />
+
+                <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">系統整合系統</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">金融商品資料管理</a>
+                        </li>
+                        <li>
+                            <a href="#">系統工具管理</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">投資決策系統</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">定期存款管理</a>
+                        </li>
+                        <li>
+                            <a href="#">證券管理</a>
+                        </li>
+                        <li>
+                            <a href="#">借券還券管理</a>
+                        </li>
+                        <li>
+                            <a href="#">受益憑證管理</a>
+                        </li>
+                        <li>
+                            <a href="#">借券管理</a>
+                        </li>
+                        <li>
+                            <a href="#">短票管理</a>
+                        </li>
+                        <li>
+                            <a href="#">債券附條件管理</a>
+                        </li>
+                        <li>
+                            <a href="#">特別股管理</a>
+                        </li>
+                        <li>
+                            <a href="#">期貨管理</a>
+                        </li>
+                        <li>
+                            <a href="#">另類投資管理</a>
+                        </li>
+                        <li>
+                            <a href="#">外幣定期存款管理</a>
+                        </li>
+                        <li>
+                            <a href="#">國外證券管理</a>
+                        </li>
+                        <li>
+                            <a href="#">國外債券管理</a>
+                        </li>
+                        <li>
+                            <a href="#">遠期外匯管理</a>
+                        </li>
+                        <li>
+                            <a href="#">決策系統功能</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#investmentmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">投資稽核控管系統</a>
+                    <ul class="collapse list-unstyled" id="investmentmenu">
+                        <li>
+                            <a href="#">投組基本資料管理</a>
+                        </li>
+                        <li>
+                            <a href="#">交易傳輸管理</a>
+                        </li>
+                        <li>
+                            <a href="#">稽核法規</a>
+                        </li>
+                        <li>
+                            <a href="#">績效評比</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- Page Content Holder -->
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    @RenderBody()
+                    <hr />
+                    <footer>
+                        <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+                    </footer>
+                </div>
+            </nav>
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
 </body>
 </html>
