@@ -7,6 +7,10 @@
 <nav class="navbar navbar-light bg-light">
     <form class="form-inline">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" value="1">
+        <br /> <br />
+        <input type="checkbox" /> 含債券 &nbsp;&nbsp;&nbsp;&nbsp;
+        <span>稽核警示依據</span> <input type="radio" />&nbsp;契約&nbsp;<input type="radio" />&nbsp;稽核&nbsp;<input type="radio" />&nbsp;投資
+        <br /><br />
         <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
     </form>
 </nav>
@@ -14,34 +18,52 @@
 <button class="btn btn-success my-2 my-sm-0">Export</button>
 <br /><br />
 
-<table border="1px" class="table table-bordered table-condensed">
-    <tbody>
-        <tr>
-            <td><label>投組名稱</label></td>
-            <td colspan="3">1</td>
-        </tr>
-        <tr>
-            <td><label for="UserName">下單券商</label></td>
-            <td colspan="3">Test</td>
-        </tr>
-        <tr>
-            <td><label for="Email">買進總額</label></td>
-            <td>2000000</td>
-            <td><label>賣出總額</label></td>
-            <td>10000</td>
-        </tr>
-        <tr>
-            <td><label>下單比率</label></td>
-            <td colspan="3">5%</td>
-        </tr>
-        <tr>
-            <td><label>手續費合計</label></td>
-            <td>50000</td>
-            <td><label>手續費比率</label></td>
-            <td>10%</td>
-        </tr>
-    </tbody>
-</table>
+      <table class="table table-hover">
+          <thead>
+              <tr>
+                  <th scope="col">基金名稱</th>
+                  <th scope="col">下單券商</th>
+                  <th scope="col">買進總額</th>
+                  <th scope="col">賣出總額</th>
+                  <th scope="col">買賣總額</th>
+                  <th scope="col">下單比率</th>
+                  <th scope="col">手續費</th>
+                  <th scope="col">手續費比率</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <th scope="row">新制勞退基金</th>
+                  <td>中央信托局</td>
+                  <td>500</td>
+                  <td>300</td>
+                  <td>800</td>
+                  <td>1%</td>
+                  <td>1000</td>
+                  <td>10%</td>
+              </tr>
+              <tr>
+                  <th scope="row">勞工退休金</th>
+                  <td>交通銀行</td>
+                  <td>800</td>
+                  <td>600</td>
+                  <td>1400</td>
+                  <td>1%</td>
+                  <td>1000</td>
+                  <td>10%</td>
+              </tr>
+              <tr>
+                  <th scope="row">新制勞退基金</th>
+                  <td>台灣銀行</td>
+                  <td>400</td>
+                  <td>600</td>
+                  <td>1000</td>
+                  <td>1%</td>
+                  <td>1000</td>
+                  <td>10%</td>
+              </tr>
+          </tbody>
+      </table>
 
 
 

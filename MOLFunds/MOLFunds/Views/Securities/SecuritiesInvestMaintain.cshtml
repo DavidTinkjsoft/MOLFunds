@@ -7,40 +7,48 @@
 <form>
     <div class="container">
         <div class="form-group col-md-4">
-            <label>投組名稱</label>
-            <input type="text" class="form-control" placeholder="投組名稱">
+            <label for="dropdownMenuButton">基金名稱</label>
+            <select name="基金名稱" class="form-control" id="dropdownMenuButton">
+                <option value="0001">0001 新制勞工退休基金</option>
+            </select>
         </div>
-        <div class="form-group col-md-4">
+        <div class="form-group col-md-2">
             <label>依據編號</label>
-            <input type="text" class="form-control" placeholder="依據編號">
+            <input type="text" class="form-control" placeholder="">
         </div>
     </div>
     <div class="container">
         <div class="form-group col-md-2">
             <label>決定書編號</label>
-            <input type="text" class="form-control" placeholder="決定書編號">
+            <input type="text" class="form-control" placeholder="編號產生中">
         </div>
         <div class="form-group col-md-4">
             <label>決定書日期</label>
-            <input type="text" class="form-control" placeholder="決定書日期">
+            <input type="text" class="form-control" placeholder="2018/07/26">
         </div>
         <div class="form-group col-md-2">
-            <label>證券代碼</label>
-            <input type="text" class="form-control" placeholder="證券代碼">
+            <label for="dropdownMenuButton">證券代碼</label>
+            <select name="證券代碼" class="form-control" id="dropdownMenuButton">
+                <option value="1101">1101 台泥</option>
+            </select>
         </div>
     </div>
     <div class="container">
         <div class="form-group col-md-2">
-            <label>交易種類</label>
-            <input type="text" class="form-control" placeholder="交易種類">
+            <label for="dropdownMenuButton">交易種類</label>
+            <select name="交易種類" class="form-control" id="dropdownMenuButton">
+                <option value="001">普通股</option>
+            </select>
         </div>
         <div class="form-group col-md-2">
             <label>股數</label>
-            <input type="text" class="form-control" placeholder="股數">
+            <input type="text" class="form-control" placeholder="99">
         </div>
         <div class="form-group col-md-4">
-            <label>價格區間</label>
-            <input type="text" class="form-control" placeholder="價格區間">
+            <label>價格區間</label><br />
+            <input type="radio" name="interval1" value="male"> 市價
+            <input type="radio" name="interval2" value="female"> 限價
+            <input type="radio" name="interval3" value="other"> 區間價
         </div>
     </div>
     <div class="container">
@@ -52,9 +60,11 @@
             <label>賣出價格</label>
             <input type="text" class="form-control" placeholder="賣出價格">
         </div>
-        <div class="form-group col-md-4">
-            <label>理由</label>
-            <input type="text" class="form-control" placeholder="理由">
+        <div class="form-group col-md-2">
+            <label for="dropdownMenuButton">理由</label>
+            <select name="理由" class="form-control" id="dropdownMenuButton">
+                <option value="001">建立部位</option>
+            </select>
         </div>
     </div>
     <div class="container">

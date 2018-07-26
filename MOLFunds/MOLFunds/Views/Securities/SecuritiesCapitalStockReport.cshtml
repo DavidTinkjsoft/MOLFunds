@@ -7,38 +7,64 @@
 <nav class="navbar navbar-light bg-light">
     <form class="form-inline">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" value="1">
+        <br /> <br />
+        <input type="checkbox" /> 含債券 &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" /> 僅列警示 &nbsp;&nbsp;&nbsp;&nbsp;
+        <br /><br />
+        <span>稽核警示依據</span> <input type="radio" />&nbsp;契約&nbsp;<input type="radio" />&nbsp;稽核&nbsp;<input type="radio" />&nbsp;投資
+        <br /><br />
         <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
     </form>
 </nav>
 
-<button class="btn btn-success my-2 my-sm-0">Export</button>
+<button class="btn btn-success my-2 my-sm-0" style="right:50px">Export</button>
 <br /><br />
 
-<table border="1px" class="table table-bordered table-condensed">
+<h2>股本比率控管表</h2>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">基金名稱</th>
+            <th scope="col">客戶名稱</th>
+            <th scope="col">證券代碼</th>
+            <th scope="col">證券名稱</th>
+            <th scope="col">發行張數</th>
+            <th scope="col">持有張數</th>
+            <th scope="col">股本比率</th>
+            <th scope="col">尚可投資張數</th>
+        </tr>
+    </thead>
     <tbody>
         <tr>
-            <td><label>投組名稱</label></td>
-            <td colspan="3">1</td>
+            <th scope="row">新制勞退基金</th>
+            <td>Q1</td>
+            <td>001</td>
+            <td>中央信托局</td>
+            <td>800000</td>
+            <td>1%</td>
+            <td>800</td>
+            <td>4000</td>
         </tr>
         <tr>
-            <td><label for="UserName">證券名稱</label></td>
-            <td>Test</td>
-            <td><label for="Email">公司發行張數</label></td>
-            <td>2000000</td>
+            <th scope="row">勞工退休金</th>
+            <td>Q1</td>
+            <td>001</td>
+            <td>交通銀行</td>
+            <td>800000</td>
+            <td>1%</td>
+            <td>800</td>
+            <td>4000</td>
         </tr>
         <tr>
-            <td><label>持有張數</label></td>
-            <td>10000</td>
-            <td><label>股本比率</label></td>
-            <td>5%</td>
-        </tr>
-        <tr>
-            <td><label>尚可加碼投資張數</label></td>
-            <td colspan="3">50000</td>
-        </tr>
-        <tr>
-            <td><label>警示訊息</label></td>
-            <td colspan="3">353222090775399</td>
+            <th scope="row">新制勞退基金</th>
+            <td>Q1</td>
+            <td>001</td>
+            <td>台灣銀行</td>
+            <td>800000</td>
+            <td>1%</td>
+            <td>800</td>
+            <td>4000</td>
         </tr>
     </tbody>
 </table>
