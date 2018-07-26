@@ -202,14 +202,14 @@
     <Content Include="Views\Audit\FundsAuditQuota.cshtml" />
     <Content Include="Views\Securities\SecuritiesCapitalStockReport.cshtml" />
     <Content Include="Views\Securities\TransactionTotalReport.cshtml" />
-
+<<<<<<< HEAD
     <Content Include="Views\Securities\SecuritiesBond.cshtml" />
-
+=======
     <Content Include="Views\Securities\SecuritiesInvestMaintain.cshtml" />
     <Content Include="Views\Securities\SecuritiesTurnover.cshtml" />
     <Content Include="Views\Securities\SecuritiesReturn.cshtml" />
     <Content Include="Views\Sign\SignGridView.cshtml" />
-
+>>>>>>> 3f7048fb1426528aba86e6480e47a30a56085c59
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

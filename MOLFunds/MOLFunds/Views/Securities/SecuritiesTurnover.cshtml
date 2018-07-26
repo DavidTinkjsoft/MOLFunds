@@ -1,0 +1,83 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<h2>證券買進周轉率評比表</h2>
+<br />
+<form>
+    <div class="form-group row">
+        <div class="col">
+            <label for="inputEmail3" class="col-md-1 col-form-label">查詢條件</label>
+        </div>
+        <div class="col-md-6">
+            <input type="text" class="form-control" id="inputPassword3" placeholder="查詢條件">
+        </div>
+    </div>
+</form>
+<button type="button" class="btn btn-success">Export</button>
+<br />
+<br />
+<table class="table table-hover table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">投組名稱</th>
+            <th scope="col">一個月</th>
+            <th scope="col">兩個月</th>
+            <th scope="col">三個月</th>
+            <th scope="col">六個月</th>
+            <th scope="col">一年</th>
+            <th scope="col">兩年</th>
+            <th scope="col">三年</th>
+            <th scope="col">動作</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>雙鴻</td>
+            <td>97.20</td>
+            <td>232.44</td>
+            <td>110.96</td>
+            <td>111.81</td>
+            <td>134.64</td>
+            <td>95.46</td>
+            <td>235.57</td>
+            <td>
+                <button type="button" class="btn btn-primary">edit</button>
+                <button type="button" class="btn btn-danger">delete</button>
+            </td>
+
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>力致</td>
+            <td>27.05</td>
+            <td>94.03</td>
+            <td>26.83</td>
+            <td>100.66</td>
+            <td>66.98</td>
+            <td>78.87</td>
+            <td>49.77</td>
+            <td>
+                <button type="button" class="btn btn-primary">edit</button>
+                <button type="button" class="btn btn-danger">delete</button>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>鴻碩</td>
+            <td>33.40</td>
+            <td>122.60</td>
+            <td>108.96</td>
+            <td>81.54</td>
+            <td>112.32</td>
+            <td>192.03</td>
+            <td>87.78</td>
+            <td>
+                <button type="button" class="btn btn-primary">edit</button>
+                <button type="button" class="btn btn-danger">delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

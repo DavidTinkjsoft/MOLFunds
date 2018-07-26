@@ -24,20 +24,44 @@ namespace MOLFunds.Controllers
             return View();
         }
 
+
         public ActionResult SecuritiesInvestment()
         {
             return View();
         }
+
+        public ActionResult SecuritiesInvestment() {
+            return View();
+        }
+
         public ActionResult SecuritiesCapitalStockReport() {
             return View();
         }
 
         public ActionResult TransactionTotalReport() {
+
             return View();
         }
 
         public ActionResult SecuritiesBond()
         {
+
+
+            return View();
+        }
+
+        public ActionResult SecuritiesInvestMaintain() {
+            
+            return View();
+        }
+
+        public ActionResult SecuritiesTurnover() {
+
+            return View();
+        }
+
+        public ActionResult SecuritiesReturn() {
+
             return View();
         }
     }
