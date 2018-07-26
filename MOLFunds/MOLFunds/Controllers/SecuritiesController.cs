@@ -24,6 +24,11 @@ namespace MOLFunds.Controllers
             return View();
         }
 
+        public ActionResult Securities60Average2()
+        {
+            return View();
+        }
+
 
         public ActionResult SecuritiesInvestment()
         {
