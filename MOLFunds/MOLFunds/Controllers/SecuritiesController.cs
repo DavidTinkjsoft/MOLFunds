@@ -30,7 +30,7 @@ namespace MOLFunds.Controllers
             return View();
         }
 
-        public ActionResult SecuritiesInvestment() {
+        public ActionResult SecuritiesSummary() {
             return View();
         }
 

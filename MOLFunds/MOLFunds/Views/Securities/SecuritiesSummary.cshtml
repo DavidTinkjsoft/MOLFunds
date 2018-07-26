@@ -1,0 +1,86 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<h2>整體基金持有國內股票占公司比例一覽表</h2>
+<br />
+<form>
+    <div class="form-group row">
+        <div style="vertical-align:middle">
+            <label for="inputEmail3" class="col-md-1 col-form-label">查詢條件</label>
+        </div>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPassword3" placeholder="查詢條件">
+        </div>
+        <button type="button" class="btn btn-success">列印</button>
+    </div>
+</form>
+<br />
+<table class="table table-hover table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">股票代號</th>
+            <th scope="col">股票名稱</th>
+            <th scope="col">股本(百萬])</th>
+            <th scope="col">庫存</th>
+            <th scope="col">張數總和</th>
+            <th scope="col">庫存張數</th>
+            <th scope="col">占股本比重</th>
+            <th scope="col">庫存張數比例增減變化</th>
+            <th scope="col">平均成本增減變化</th>            
+            <th scope="col">動作</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>2303</td>
+            <td>聯電</td>
+            <td>3000</td>
+            <td>200000</td>
+            <td>250000</td>
+            <td>5000</td>
+            <td>1.25</td>
+            <td>3</td>
+            <td>15.5</td>          
+            <td>
+                <button type="button" class="btn btn-primary">edit</button>
+                <button type="button" class="btn btn-danger">delete</button>
+            </td>
+
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>2323</td>
+            <td>中環</td>
+            <td>3000</td>
+            <td>200000</td>
+            <td>250000</td>
+            <td>5000</td>
+            <td>1.25</td>
+            <td>3</td>
+            <td>15.5</td>
+            <td>
+                <button type="button" class="btn btn-primary">edit</button>
+                <button type="button" class="btn btn-danger">delete</button>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>2884</td>
+            <td>玉金山</td>
+            <td>3000</td>
+            <td>200000</td>
+            <td>250000</td>
+            <td>5000</td>
+            <td>1.25</td>
+            <td>3</td>
+            <td>15.5</td>
+            <td>
+                <button type="button" class="btn btn-primary">edit</button>
+                <button type="button" class="btn btn-danger">delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
