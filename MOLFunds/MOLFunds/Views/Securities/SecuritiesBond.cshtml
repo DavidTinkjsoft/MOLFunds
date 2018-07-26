@@ -1,0 +1,118 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>新增債券基本資料</h2>
+<br />
+<style>
+    h2{
+        font-family : '微軟正黑體';
+        font-weight : bold;
+        color : royalblue;
+    }
+
+    table {
+        font-family: '微軟正黑體';
+    }
+
+</style>
+<form>
+    <div class="form-group row">
+        <label for="inputEmail3" class="col-md-1 col-form-label">債券代碼</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="債券代碼">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputEmail3" class="col-md-1 col-form-label">債券名稱</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPassword3" placeholder="債券名稱">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputEmail3" class="col-md-1 col-form-label">債券類別</label>
+        <div class="col-sm-10">
+            <select class="form-control">
+                <option value="Taiwan">公債</option>
+                <option value="Taiwan">公司債</option>
+                <option value="Taiwan">金融債</option>               
+            </select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputEmail3" class="col-md-1 col-form-label">幣別</label>
+        <div class="col-sm-10">
+            <select class="form-control">
+                <option value="TWD">TWD</option>                
+            </select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputEmail3" class="col-md-1 col-form-label">國家別</label>
+        <div class="col-sm-10">
+            <select class="form-control">
+                <option value="Taiwan">Taiwan</option>
+                <option value="US">US</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-10">
+            <button type="button" class="btn btn-success">Export</button>
+            <button type="button" class="btn btn-danger">Empty</button>
+        </div>
+    </div>
+    <hr />
+    <table class="table table-hover table-bordered" >
+            <tr>
+                <th colspan="4" style="text-align:center">債券基本資料表</th>
+            </tr>
+            <tr>
+                <th scope="col">債券代碼</th>
+                <td>12345</td>
+                <th scope="col">債券名稱</th>
+                <td>政府公債</td>
+            </tr>
+            <tr>
+                <th scope="col">債券類別</th>
+                <td></td>
+                <th scope="col">幣別</th>
+                <td>AUD</td>
+            </tr>
+            <tr>
+                <th scope="col">國家別</th>
+                <td>Taiwan</td>
+                <th scope="col">發行日期</th>
+                <td>1070726</td>
+            </tr>
+            <tr>
+                <th scope="col">到期日期</th>
+                <td>1080315</td>
+                <th scope="col">發行總額</th>
+                <td>2,000,000</td>
+            </tr>
+            <tr>
+                <th scope="col">票面利率</th>
+                <td>1.52</td>
+                <th scope="col">利率類別</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="col">付息頻率</th>
+                <td></td>
+                <th scope="col">發行公司</th>
+                <td>02 台積 4B</td>
+            </tr>
+            <tr>
+                <th scope="col">發行期別</th>
+                <td></td>
+                <th scope="col">標定性質</th>
+                <td></td>
+            </tr>
+            <tr>               
+                <th colspan="4">
+                    <button type="button" class="btn btn-info" style="align-content:center">編輯</button>
+                </th>
+            </tr>        
+    </table>
+</form>
