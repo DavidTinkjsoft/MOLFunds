@@ -211,8 +211,12 @@
     <Content Include="Views\Securities\SecuritiesSummary.cshtml" />
     <Content Include="Views\Securities\SecuritiesMaintain.cshtml" />
     <Content Include="Views\Securities\Securities60Average.cshtml" />
+
     <Content Include="Views\Add\WebCrawler.cshtml" />
     <Content Include="Views\Add\OnlineApproval.cshtml" />
+
+    <Content Include="Views\Securities\UserPermissionSetting.cshtml" />
+ed45f058a885592c268f674b8bae03013b9e8a07
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

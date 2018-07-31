@@ -24,7 +24,12 @@ namespace MOLFunds.Controllers
             return View();
         }
 
-        public ActionResult Securities60Average2()
+        public ActionResult UserPermissionSetting()
+        {
+            return View();
+        }
+
+        public ActionResult UserOperationHistory()
         {
             return View();
         }
