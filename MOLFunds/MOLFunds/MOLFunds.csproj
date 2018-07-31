@@ -152,6 +152,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SecuritiesController.cs" />
     <Compile Include="Controllers\SignController.cs" />
+    <Compile Include="Controllers\AddController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -210,10 +211,13 @@
     <Content Include="Views\Securities\SecuritiesSummary.cshtml" />
     <Content Include="Views\Securities\SecuritiesMaintain.cshtml" />
     <Content Include="Views\Securities\Securities60Average.cshtml" />
+    <Content Include="Views\Add\WebCrawler.cshtml" />
+    <Content Include="Views\Add\OnlineApproval.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\WebCrawler\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
