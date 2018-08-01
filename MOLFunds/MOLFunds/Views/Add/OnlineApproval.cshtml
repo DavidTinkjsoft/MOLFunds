@@ -1,0 +1,93 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<h2>線上簽核</h2>
+<br />
+<table class="table table-hover table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">項目</th>
+            <th scope="col">申請人</th>
+            <th scope="col">狀態</th>
+            <th scope="col">申請時間</th>
+            <th scope="col">動作</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>網路爬蟲</td>
+            <td>申請人A</td>
+            <td>待審</td>
+            <td>2018/7/31 16:11</td>
+            <td><button type="button" class="btn btn-primary">審閱</button></td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>使用者權限設定</td>
+            <td>申請人B</td>
+            <td>否決</td>
+            <td>2018/7/31 17:11</td>
+            <td><button type="button" class="btn btn-primary" disabled>審閱</button></td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>網路爬蟲</td>
+            <td>申請人C</td>
+            <td>決行</td>
+            <td>2018/7/31 15:11</td>
+            <td><button type="button" class="btn btn-primary" disabled>審閱</button></td>
+        </tr>
+    </tbody>
+</table>
+<br />
+<table class="table table-hover table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">申請單號</th>
+            <th scope="col">項目</th>
+            <th scope="col">申請人</th>
+            <th scope="col">基金名稱</th>
+            <th scope="col">網站名稱</th>
+            <th scope="col">匯率來源</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row" rowspan="3">1</th>
+            <td rowspan="3">網路爬蟲</td>
+            <td rowspan="3">申請人A</td>
+            <td>野村台灣運籌基金</td>
+            <td>鉅亨網</td>
+            <td rowspan="3">臺灣銀行</td>
+        </tr>
+        <tr>
+            <td>摩根新興科技基金</td>
+            <td>MoneyDJ理財網</td>
+        </tr>
+        <tr>
+            <td>統一大滿貫基金</td>
+            <td>智富網</td>
+        </tr>
+    </tbody>
+</table>
+<table>
+    <tr>
+        <td>
+            <button type="button" class="btn btn-primary">決行</button>&nbsp;&nbsp;
+        </td>
+        <td>
+            <button type="button" class="btn btn-danger" disabled>否決</button>&nbsp;&nbsp;
+        </td>
+        <td>
+            <input type="text" class="form-control" placeholder="請敘述原由">
+        </td>
+    </tr>
+</table>
+<footer>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</footer>
+
